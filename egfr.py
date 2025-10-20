@@ -1,6 +1,6 @@
-cr_original = 78 # umol/L
+cr_original = 80 # umol/L
 gender = 'm' # 'm' or 'f', i.e., male or female
-age = 50
+age = 30
 weight = 65 # kg, only applicable in CG formula
 cr = cr_original/88.42 # mg/dL
 

@@ -1,4 +1,4 @@
-# eGFR_calculator
+# Estimated glomerular filtration rate (GFR) calculator
  
 Glomerular filtration rate (GFR) is a key indicator for kidney health situation, and GFR can be estimated by serum creatinine concentration, known as eGFR (estimated GFR). This repo implements four commonly-used methods for eGFR calculation, including Cockcroft-Gault (C-G) equation [1], modification of diet in renal disease (MDRD) (Chinese version) equation [1,2], Xiangya equation [3], and Chronic Kidney Disease Epidemiology Collaboration (CKD-EPI) equation [4].
 
