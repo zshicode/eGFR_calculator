@@ -18,7 +18,7 @@ def CKD_EPI(cr,gender,age):
     
     print('CKD-EPI: ',egfr)
 
-def eGFR_CN(cr,gender,age):
+def Xiangya(cr,gender,age):
     egfr = 2374.78*pow(cr,-0.54753)*pow(age,-0.25011)
     if gender == 'f':
         egfr *= 0.8526126
@@ -41,6 +41,6 @@ def MDRD_CN(cr,gender,age):
     print('MDRD-CN: ',egfr)
 
 CKD_EPI(cr,gender,age)
-eGFR_CN(cr_original,gender,age)
+Xiangya(cr_original,gender,age)
 CG(cr,gender,age,weight)
 MDRD_CN(cr,gender,age)
