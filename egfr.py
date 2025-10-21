@@ -1,8 +1,10 @@
 cr_original = 80 # umol/L
 gender = 'm' # 'm' or 'f', i.e., male or female
 age = 30
-weight = 65 # kg, only applicable in CG formula
+weight = 65 # kg
+height = 175 # cm
 cr = cr_original/88.42 # mg/dL
+bsa = 0.007184*pow(weight,0.425)*pow(height,0.725) #m^2, body surface area
 
 def CKD_EPI(cr,gender,age):
     if gender == 'm':
@@ -25,11 +27,11 @@ def Xiangya(cr,gender,age):
     
     print('eGFR-CN: ',egfr)
 
-def CG(cr,gender,age,weight):
+def CG(cr,gender,age,weight,bsa):
     if gender == 'f':
-        egfr = (140-age)*weight/(85*cr)
+        egfr = 1.73*(140-age)*weight/(85*cr*bsa)
     else:
-        egfr = (140-age)*weight/(72*cr)
+        egfr = 1.73*(140-age)*weight/(72*cr*bsa)
     
     print('CG: ',egfr)
 
